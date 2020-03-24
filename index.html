@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <header class="Cabecalho">
+        <h1><img src="img/quiz.png" alt="show"></h1>
+
+    </header>
+    <main>
+        <div id="esconderParaJogoComecar">
+            <label for="nome">Digite seu Nome:</label>
+            <input class="entTexto" type="text" id="nome">
+            <button  onclick="pegarNome()"><i class="fas fa-check"></i></button>
+
+            <section style="display: none;" id=inicioJogo>
+                <p id="inicio"></p>
+                <button onclick="inicioJogo()"><i class="fas fa-check"></i></button>
+                <button onclick="encerrarJogo()"><i class="fas fa-times"></i></button>
+            </section>
+        </div>  
+        <section style="display: none;" id=jogar>
+            <p >Selecione o tema:</p>
+            <button onclick="matematica()" class="botao">Matemática</button>
+            <button onclick="comida()" class="botao">Comida</button>
+        </section> 
+        <section style="display: none;" id="comida" class="perguntas">
+    
+            <p > 1. Qual é a comida tipíca da Argentina?</p>
+            <p>A. Feijoada</p>
+            <p>b. Sushi</p>
+            <p>C. Churrasco</p>
+            <input class="entTexto" type="text" name="comida1" id="comida1" placeholder="Digite apenas a letra">
+
+            <p > 2. Qual é a comida tipíca da Áustria?</p>
+            <p>A. Bife à milanesa</p>
+            <p>b. Macarronada</p>
+            <p>C. Frutos do mar</p>
+            <input class="entTexto" type="text" name="comida2" id="comida2" placeholder="Digite apenas a letra">
+          
+            <p > 3. Qual é a comida tipíca da Canadá?</p>
+            <p>A. Pizza</p>
+            <p>b. Batatas fritas com molho</p>
+            <p>C. Hambúrgue</p>
+            <input class="entTexto" type="text" name="comida3" id="comida3" placeholder="Digite apenas a letra">
+            
+            <button onclick="verificarCom()" class="botaover"> Verificar respostas</button>
+
+        </section> 
+        <div style="display: none;" id= "totalComida">
+            <div  class="respostas">
+            <div class="respostasCertas" id= "respostasCertas">
+
+                <h3>Respostas Certas</h3>
+                <p id="respComida1"></p>
+                <p id="respComida2"></p>
+                <p id="respComida3"></p>
+
+            </div>
+            <div class="respostasErradas" id= "respostasErradas">
+                <h3>Respostas Erradas</h3>
+                <p id="respComida1E"></p>
+                <p id="respComida2E"></p>
+                <p id="respComida3E"></p>
+                
+            </div>
+        </div>
+            <button onclick="window.location.reload()" class="botao">jogar novamente?</button>
+            <button onclick="encerrarJogo()" class="botao">Sair</button>
+        </div>
+
+        <section style="display: none;" id="matematica" class="perguntas">
+            <p > 1. Quanto é 1000 + 250?</p>
+            <p>A. 1420</p>
+            <p>b. 1250</p>
+            <p>C.1025</p>
+            <input class="entTexto" type="text" name="matematica1" id="matematica1" placeholder="Digite apenas a letra">
+
+            <p > 2. Quanto é 17*11?</p>
+            <p>A. 207</p>
+            <p>b. 177</p>
+            <p>C. 187</p>
+            <input class="entTexto" type="text" name="matematica2" id="matematica2" placeholder="Digite apenas a letra">
+           
+            <p > 3. Quanto é 400/4?</p>
+            <p>A. 100</p>
+            <p>b. 104</p>
+            <p>C. 10</p>
+            <input class="entTexto" type="text" name="matematica3" id="matematica3" placeholder="Digite apenas a letra">
+            
+            <button onclick="verificarMat()" class="botaover" > Verificar respostas</button>
+
+        </section> 
+
+        <div  style="display: none;" id= "totalMatematica">
+            <div class="respostas">
+            <div class="respostasCertas" id= "respostasCertasM">
+                <h3>Respostas Certas</h3>
+                <p id="respMatematica1"></p>
+                <p id="respMatematica2"></p>
+                <p id="respMatematica3"></p>
+
+            </div>
+            <div class="respostasErradas" id= "respostasErradasM">
+                <h3>Respostas Erradas</h3>
+                <p id="respMatematica1E"></p>
+                <p id="respMatematica2E"></p>
+                <p id="respMatematica3E"></p>
+                
+            </div>
+        </div>
+            <button onclick="window.location.reload()"class="botao">jogar novamente?</button>
+            <button onclick="encerrarJogo()"class="botao">Sair</button>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

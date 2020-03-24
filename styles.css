@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    
+
+}
+body{
+    background-color: rgb(200, 148, 207);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(9, 143, 184);
+    font-weight: bold;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+
+}
+.perguntas{
+text-align: left;
+
+}
+img {
+    width: 300px;
+
+}
+
+.entTexto{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid white;
+    font-size: 15px;
+    color: rgb(236, 232, 234);
+
+}
+
+.respostas{
+display: flex;
+align-items: flex-start;
+justify-content: center;
+
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    color: rgba(138, 6, 138, 0.959);
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+button :hover{
+opacity: 0.5;
+text-decoration: underline;
+
+}
+
+.fa-check{
+    color: rgb(44, 235, 75);
+    font-size: 20px;
+}
+.fa-times{
+    color: red;
+    font-size: 20px;
+}
+
+.respostasErradas{
+border: 2px solid rgba(138, 6, 138, 0.959);
+color: red;
+height: 250px;
+width: 250px;
+background-color: rgb(9, 143, 184);
+margin: 20px;
+padding: 10px;
+
+}
+
+.respostasCertas{
+    border: 2px solid  rgba(138, 6, 138, 0.959);
+    color: rgb(44, 235, 75);
+    height: 250px;
+    width: 250px;
+    background-color: rgb(9, 143, 184);
+    margin: 20px;
+    padding: 10px;
+}
+.botaover{
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.botaover:hover{
+    opacity: 0.5;
+    text-decoration: underline;
+}
+.botao:hover{
+    opacity: 0.5;
+    text-decoration: underline;
+}
